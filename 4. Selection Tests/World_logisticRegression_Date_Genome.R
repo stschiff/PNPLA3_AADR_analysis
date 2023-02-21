@@ -87,7 +87,7 @@ selection.africa.pnpla3 <- ggplot(data = data.africa.pnpla3, aes(x = beta1)) +
                             geom_vline(xintercept=mean(data.africa.pnpla3$beta1),                                color = "red", linetype = "solid",  size = stats.size) +
                             geom_vline(xintercept=mean(data.africa.pnpla3$beta1)+sd(data.africa.pnpla3$beta1),   color = "red", linetype = "dashed", size = stats.size) +
                             geom_vline(xintercept=mean(data.africa.pnpla3$beta1)+2*sd(data.africa.pnpla3$beta1), color = "red", linetype = "dashed", size = stats.size) +
-                            labs(title = "Genome-wide Analysis Date - PNPLA3 - Africa", x = "beta1", y = "Density") +
+                            labs(title = "PNPLA3 - Genome-wide Analysis Africa - Date", x = "beta1", y = "Density") +
                             theme_bw()
 # America
 america.pnpla3      <- log.reg.america.pnpla3[1,1]
@@ -101,7 +101,7 @@ selection.america.pnpla3 <- ggplot(data = data.america.pnpla3, aes(x = beta1)) +
                               geom_vline(xintercept=mean(data.america.pnpla3$beta1),                                 color = "red", linetype = "solid",  size = stats.size) +
                               geom_vline(xintercept=mean(data.america.pnpla3$beta1)+sd(data.america.pnpla3$beta1),   color = "red", linetype = "dashed", size = stats.size) +
                               geom_vline(xintercept=mean(data.america.pnpla3$beta1)+2*sd(data.america.pnpla3$beta1), color = "red", linetype = "dashed", size = stats.size) +
-                              labs(title = "Genome-wide Analysis Date - PNPLA3 - America", x = "beta1", y = "Density") +
+                              labs(title = "PNPLA3 - Genome-wide Analysis America - Date", x = "beta1", y = "Density") +
                               theme_bw()
 # Asia
 asia.pnpla3      <- log.reg.asia.pnpla3[1,1]
@@ -115,7 +115,7 @@ selection.asia.pnpla3 <- ggplot(data = data.asia.pnpla3, aes(x = beta1)) +
                             geom_vline(xintercept=mean(data.asia.pnpla3$beta1),                                color = "red", linetype = "solid",  size = stats.size) +
                             geom_vline(xintercept=mean(data.asia.pnpla3$beta1)+sd(data.asia.pnpla3$beta1),   color = "red", linetype = "dashed", size = stats.size) +
                             geom_vline(xintercept=mean(data.asia.pnpla3$beta1)+2*sd(data.asia.pnpla3$beta1), color = "red", linetype = "dashed", size = stats.size) +
-                            labs(title = "Genome-wide Analysis Date - PNPLA3 - Asia", x = "beta1", y = "Density") +
+                            labs(title = "PNPLA3 - Genome-wide Analysis Asia - Date", x = "beta1", y = "Density") +
                             theme_bw()
 # Europe
 europe.pnpla3      <- log.reg.europe.pnpla3[1,1]
@@ -129,7 +129,7 @@ selection.europe.pnpla3 <- ggplot(data = data.europe.pnpla3, aes(x = beta1)) +
                             geom_vline(xintercept=mean(data.europe.pnpla3$beta1),                                color = "red", linetype = "solid",  size = stats.size) +
                             geom_vline(xintercept=mean(data.europe.pnpla3$beta1)+sd(data.europe.pnpla3$beta1),   color = "red", linetype = "dashed", size = stats.size) +
                             geom_vline(xintercept=mean(data.europe.pnpla3$beta1)+2*sd(data.europe.pnpla3$beta1), color = "red", linetype = "dashed", size = stats.size) +
-                            labs(title = "Genome-wide Analysis Date - PNPLA3 - Europe", x = "beta1", y = "Density") +
+                            labs(title = "PNPLA3 - Genome-wide Analysis Europe - Date", x = "beta1", y = "Density") +
                             theme_bw()
 
 # =============================================================================

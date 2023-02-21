@@ -1,8 +1,6 @@
 library(tidyverse)
 library(ggplot2)
 
-ancient.table <- TRUE
-
 # =============================================================================
 # Auxiliary Files
 # =============================================================================
@@ -18,12 +16,9 @@ missing.coords$mean.xcoord <- readr::parse_double(missing.coords$mean.xcoord, na
 # =============================================================================
 # data set
 individuals.data <- tibble::as_tibble(read.csv("0. Input Data/dat_AADR_v50_FattyLiverSNPs_1000random.tsv", sep = "\t"))
-if(ancient.table)
-{
-  # delete .REF indidvuals
-  individuals.data <- subset(individuals.data, !(individuals.data$Individual_ID == "Ancestor.REF" | individuals.data$Individual_ID == "Chimp.REF" | 
-                                                 individuals.data$Individual_ID == "Gorilla.REF"  | individuals.data$Individual_ID == "Href.REF"))
-}
+# delete .REF indidvuals
+individuals.data <- subset(individuals.data, !(individuals.data$Individual_ID == "Ancestor.REF" | individuals.data$Individual_ID == "Chimp.REF" | 
+                                               individuals.data$Individual_ID == "Gorilla.REF"  | individuals.data$Individual_ID == "Href.REF"))
 
 # rename columns
 data.table::setnames(individuals.data, "PNPLA3.rs738409.",   "pnpla3")
@@ -35,7 +30,7 @@ data.table::setnames(individuals.data, "Longitude",          "xcoord")
 data.table::setnames(individuals.data, "Latitude",           "ycoord")
 individuals.data$country   <- as.character(individuals.data$country)
 # calculate BC-date column and set modern individuals to 0
-individuals.data <- tibble::add_column(individuals.data, date = abs((individuals.data$Date_BC_AD_Start+individuals.data$Date_BC_AD_Stop)/2)+1950, .after = "Date_BC_AD_Stop")
+individuals.data <- tibble::add_column(individuals.data, date = -((individuals.data$Date_BC_AD_Start+individuals.data$Date_BC_AD_Stop)/2)+1950, .after = "Date_BC_AD_Stop")
 # mark neanderthal without date information
 individuals.data$date[individuals.data$group.label == "VindijaG1_final_provisional.SG"] <- -1
 individuals.data$date[is.na(individuals.data$date)] <- 0
@@ -229,8 +224,7 @@ individuals.data$date <- round(individuals.data$date)
 # Export
 # =============================================================================
 individuals.data <- data.table::setorder(individuals.data, continent)
-if(!ancient.table) write.csv(individuals.data, "0. Input Data/individuals_data.csv")
-if(ancient.table)  write.csv(individuals.data, "0. Input Data/ancient_table_data.csv")
+write.csv(individuals.data, "0. Input Data/individuals_data.csv")
 
 
 

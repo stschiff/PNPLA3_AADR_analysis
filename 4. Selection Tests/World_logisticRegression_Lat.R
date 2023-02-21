@@ -92,7 +92,7 @@ glm.africa.pnpla3 <- ggplot(data = africa.pnpla3, aes(x = latitude, y = pnpla3))
                       # jittered points and labels
                       geom_point(position = jitter,
                                  size     = point.size) +
-                      labs(title = "PNPLA3 - Logistic Regression Africa") +
+                      labs(title = "PNPLA3 - Logistic Regression Africa - Latitude") +
                       theme(axis.text        = element_text(size = axis.text.size),
                             axis.title       = element_text(size = axis.title.size),
                             axis.ticks       = element_line(linewidth = axis.ticks.size),
@@ -115,7 +115,7 @@ glm.america.pnpla3 <- ggplot(data = america.pnpla3, aes(x = latitude, y = pnpla3
                         # jittered points and labels
                         geom_point(position = jitter,
                                    size     = point.size) +
-                        labs(title = "PNPLA3 - Logistic Regression America") +
+                        labs(title = "PNPLA3 - Logistic Regression America - Latitude") +
                         theme(axis.text        = element_text(size = axis.text.size),
                               axis.title       = element_text(size = axis.title.size),
                               axis.ticks       = element_line(linewidth = axis.ticks.size),
@@ -137,7 +137,7 @@ glm.asia.pnpla3 <- ggplot(data = asia.pnpla3, aes(x = latitude, y = pnpla3)) +
                     stat_smooth(method = "glm", method.args = list(family = "binomial"), se = FALSE, color = "red", linewidth = 0.5) +
                     geom_point(position = jitter,
                                size     = point.size) +
-                    labs(title = "PNPLA3 - Logistic Regression Asia") +
+                    labs(title = "PNPLA3 - Logistic Regression Asia - Latitude") +
                     theme(axis.text        = element_text(size = axis.text.size),
                           axis.title       = element_text(size = axis.title.size),
                           axis.ticks       = element_line(linewidth = axis.ticks.size),
@@ -161,7 +161,7 @@ glm.europe.pnpla3 <- ggplot(data = europe.pnpla3, aes(x = latitude, y = pnpla3))
                       # jittered points and labels
                       geom_point(position = jitter,
                                  size     = point.size) +
-                      labs(title = "PNPLA3 - Logistic Regression Europe") +
+                      labs(title = "PNPLA3 - Logistic Regression Europe - Latitude") +
                       theme(axis.text        = element_text(size = axis.text.size),
                             axis.title       = element_text(size = axis.title.size),
                             axis.ticks       = element_line(linewidth = axis.ticks.size),

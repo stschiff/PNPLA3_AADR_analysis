@@ -31,8 +31,10 @@ america.ts.3.pnpla3 <- dplyr::filter(america.ts.3, america.ts.3$pnpla3 != 9)
 # =============================================================================
 # Time Slice 1
 # =============================================================================
-countries.group.pnpla3 <- c("Argentina, Chile",
-                            "Bolivia, Peru, Venezuela",
+countries.group.pnpla3 <- c("Argentina, Chile, Brazil",
+                            "St. Lucia",
+                            "Canada",
+                            "Peru, Bolivia, Curacao, Venezuela",
                             "Mexico, Panama",
                             "Guadeloupe, Puerto Rico",
                             "USA",
@@ -70,13 +72,9 @@ group.table.data.ts1.pnpla3 <- dplyr::select(group.table.data.ts1.pnpla3, -c(3,5
 # Time Slice 2
 # =============================================================================
 countries.group.pnpla3 <- c("Argentina, Brazil, Chile",
-                            "St. Lucia",
                             "Canada",
-                            "Curacao, Peru",
-                            "Panama",
-                            "Guadeloupe, Puerto Rico",
+                            "Peru",
                             "USA",
-                            "Bahamas",
                             "Cuba",
                             "Dominican Republic",
                             "Greenland")

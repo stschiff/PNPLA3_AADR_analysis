@@ -108,7 +108,7 @@ glm.africa.pnpla3 <- ggplot(data = africa.pnpla3, aes(x = date, y = pnpla3)) +
                                        label.size    = 0.1,
                                        segment.size = 0.1
                       ) +
-                      labs(title = "PNPLA3 - Logistic Regression Africa") +
+                      labs(title = "PNPLA3 - Logistic Regression Africa - Date") +
                       theme(axis.text        = element_text(size = axis.text.size),
                             axis.title       = element_text(size = axis.title.size),
                             axis.ticks       = element_line(linewidth = axis.ticks.size),
@@ -150,7 +150,7 @@ glm.america.pnpla3 <- ggplot(data = america.pnpla3, aes(x = date, y = pnpla3)) +
                                          label.size    = 0.1,
                                          segment.size = 0.1
                         ) +
-                        labs(title = "PNPLA3 - Logistic Regression America") +
+                        labs(title = "PNPLA3 - Logistic Regression America - Date") +
                         theme(axis.text        = element_text(size = axis.text.size),
                               axis.title       = element_text(size = axis.title.size),
                               axis.ticks       = element_line(linewidth = axis.ticks.size),
@@ -192,7 +192,7 @@ glm.asia.pnpla3 <- ggplot(data = asia.pnpla3, aes(x = date, y = pnpla3)) +
                                        label.size    = 0.1,
                                        segment.size = 0.1
                       ) +
-                      labs(title = "PNPLA3 - Logistic Regression Asia") +
+                      labs(title = "PNPLA3 - Logistic Regression Asia - Date") +
                       theme(axis.text        = element_text(size = axis.text.size),
                             axis.title       = element_text(size = axis.title.size),
                             axis.ticks       = element_line(linewidth = axis.ticks.size),
@@ -235,7 +235,7 @@ glm.europe.pnpla3 <- ggplot(data = europe.pnpla3, aes(x = date, y = pnpla3)) +
                                        label.size    = 0.1,
                                        segment.size = 0.1
                       ) +
-                      labs(title = "PNPLA3 - Logistic Regression Europe") +
+                      labs(title = "PNPLA3 - Logistic Regression Europe - Date") +
                       theme(axis.text        = element_text(size = axis.text.size),
                             axis.title       = element_text(size = axis.title.size),
                             axis.ticks       = element_line(linewidth = axis.ticks.size),

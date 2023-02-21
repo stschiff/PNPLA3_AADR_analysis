@@ -89,27 +89,25 @@ europe.ts.3.pnpla3$scale  <- europe.ts.3.pnpla3$scale  * scaling.factor
 # time slice 1
 x1.offset.africa.pnpla3  <- c( 10,20)
 y1.offset.africa.pnpla3  <- c(-15, 0)
-
-x1.offset.america.pnpla3 <- c(-15,-20,-15,15,10, 0,-10,10, 0)
-y1.offset.america.pnpla3 <- c(  0,  0,  0, 0,10,10,  5,10,-7)
-
+x1.offset.america.pnpla3 <- c(15,10,-5,-20,-15,  0,-10, 0,-15,15,  0)
+y1.offset.america.pnpla3 <- c( 0, 0, 5,  0,  0,-10,  5,10, 10,10,-10)
 x1.offset.asia.pnpla3    <- c( 0, 20,10,10,  0,12,10)
 y1.offset.asia.pnpla3    <- c(20,-10,10,10,-15, 0, 0)
 
-x1.offset.europe.pnpla3  <- c(  2,-30,15,  0,-10,  2,-15,-15,10)
-y1.offset.europe.pnpla3  <- c(-10,-10, 4,-15,  5,-15,  2, 10, 0)
+x1.offset.europe.pnpla3  <- c( 2,-30,10,  0,-10,  4,-13,-13,10)
+y1.offset.europe.pnpla3  <- c(-5,-10,10,-15,  5,-15,  2, 10, 0)
 
 x1.offset.oceania.pnpla3 <- c( 0)
 y1.offset.oceania.pnpla3 <- c(15)
 # time slice 2
-x2.offset.africa.pnpla3  <- c(  0,15,-8,15)
-y2.offset.africa.pnpla3  <- c(-10, 0,-8, 0)
-x2.offset.america.pnpla3 <- c(-10,15,-5,10,-10,10,-15, 0,-10,10,  0)
-y2.offset.america.pnpla3 <- c(  5,-5, 5, 0, -5, 0, -5,10,  0,10,-10)
-x2.offset.asia.pnpla3    <- c(15,15,10,  0,  0,7,  0)
-y2.offset.asia.pnpla3    <- c( 0, 0,10,-10,-10,0,-15)
-x2.offset.europe.pnpla3  <- c(  1,13,20,-20,0, -5,-20,-10,15)
-y2.offset.europe.pnpla3  <- c(-10,20, 5, -5,8,-10,  5, 10, 0)
+x2.offset.africa.pnpla3  <- c( -5,15,-8)
+y2.offset.africa.pnpla3  <- c(-10, 0,-8)
+x2.offset.america.pnpla3 <- c(15,-5,-10,-10,10,10,  0)
+y2.offset.america.pnpla3 <- c( 0, 5,  0,  0, 5, 0,-10)
+x2.offset.asia.pnpla3    <- c(15,15,10,  0,  0,15)
+y2.offset.asia.pnpla3    <- c( 0, 0,10,-10,-10,10)
+x2.offset.europe.pnpla3  <- c(  1,13,20,-20, -5,-10,-10,5)
+y2.offset.europe.pnpla3  <- c(-15,20, 8,  0,-10, 10, 10,5)
 x2.offset.oceania.pnpla3 <- c( 0)
 y2.offset.oceania.pnpla3 <- c(15)
 # time slice 3

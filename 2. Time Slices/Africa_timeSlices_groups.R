@@ -63,7 +63,6 @@ group.table.data.ts1.pnpla3 <- dplyr::select(group.table.data.ts1.pnpla3, -c(3,5
 # Time Slice 2
 # =============================================================================
 countries.group.pnpla3 <- c("Morocco",
-                            "South Africa",
                             "Cameroon",
                             "Ethiopia, Kenya, Tanzania")
 # ind -> country summarization

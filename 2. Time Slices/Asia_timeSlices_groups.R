@@ -39,7 +39,7 @@ countries.group.pnpla3 <- c("Kazakhstan, Kyrgyzstan, Turkmenistan",
                             "India, Nepal",
                             "Iran, Pakistan",
                             "Laos, Malaysia, Thailand, Vietnam",
-                            "Israel, Lebanon")
+                            "Israel, Lebanon, Turkey")
 # ind -> country summarization
 asia.ts.1.pnpla3$subregion <- as.character(asia.ts.1.pnpla3$subregion)
 asia.ts.1.pnpla3.country   <- dplyr::group_by(asia.ts.1.pnpla3, country) %>% summarise(individuals = n(),
@@ -72,9 +72,8 @@ group.table.data.ts1.pnpla3 <- dplyr::select(group.table.data.ts1.pnpla3, -c(3,5
 countries.group.pnpla3 <- c("Kazakhstan, Kyrgyzstan, Tajikistan, Turkmenistan, Uzbekistan",
                             "China, Japan, Mongolia, Taiwan",
                             "Russia",
-                            "India",
                             "Iran, Pakistan",
-                            "Laos, Malaysia, Vietnam",
+                            "Laos, Vietnam",
                             "Armenia, Azerbaijan, Israel, Jordan, Lebanon, Syria, Turkey")
 # ind -> country summarization
 asia.ts.2.pnpla3$subregion <- as.character(asia.ts.2.pnpla3$subregion)
