@@ -140,3 +140,24 @@ log.reg.gen.world <- cowplot::plot_grid(selection.africa.pnpla3, selection.ameri
                                         selection.asia.pnpla3,   selection.europe.pnpla3,  nrow = 4, ncol = 1, labels = "AUTO")
 ggsave(filename = "LogisticRegression_Lat_Genome.pdf", plot = log.reg.gen.world, device = "pdf", path = "5. Plots", width = 18, height = 26, units = "cm")
 ggsave(filename = "LogisticRegression_Lat_Genome.png", plot = log.reg.gen.world, device = "png", path = "5. Plots", width = 18, height = 26, units = "cm")
+
+
+# Getting the p-values (i.e. fraction of genome-wide sites larger than the value for PNPLA3):
+
+length(data.africa.pnpla3$beta1[data.africa.pnpla3$beta1 > africa.pnpla3]) /
+  length(data.africa.pnpla3$beta1)
+# 0.2253086
+
+length(data.america.pnpla3$beta1[data.america.pnpla3$beta1 > america.pnpla3]) /
+  length(data.america.pnpla3$beta1)
+# 0.1243523
+
+length(data.asia.pnpla3$beta1[data.asia.pnpla3$beta1 > asia.pnpla3]) /
+  length(data.asia.pnpla3$beta1)
+# 0.1824742
+
+length(data.europe.pnpla3$beta1[data.europe.pnpla3$beta1 > europe.pnpla3]) /
+  length(data.europe.pnpla3$beta1)
+# 0.1746862
+
+

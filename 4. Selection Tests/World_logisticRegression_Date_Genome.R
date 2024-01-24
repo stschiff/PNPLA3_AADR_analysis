@@ -149,13 +149,13 @@ length(data.africa.pnpla3$beta1[data.africa.pnpla3$beta1 > africa.pnpla3]) /
   length(data.africa.pnpla3$beta1)
 # 0.1472603
 
-length(data.asia.pnpla3$beta1[data.asia.pnpla3$beta1 > asia.pnpla3]) /
-  length(data.asia.pnpla3$beta1)
-# 0.2991453
-
 length(data.america.pnpla3$beta1[data.america.pnpla3$beta1 > america.pnpla3]) /
   length(data.america.pnpla3$beta1)
 # 0.06845638
+
+length(data.asia.pnpla3$beta1[data.asia.pnpla3$beta1 > asia.pnpla3]) /
+  length(data.asia.pnpla3$beta1)
+# 0.2991453
 
 length(data.europe.pnpla3$beta1[data.europe.pnpla3$beta1 > europe.pnpla3]) /
   length(data.europe.pnpla3$beta1)
